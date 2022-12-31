@@ -1,7 +1,7 @@
 import styles from '../style'
 
 const About = () => (
-    <div>About</div>
+    <div>Abodlsut</div>
 );
 
 export default About
