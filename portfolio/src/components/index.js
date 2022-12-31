@@ -1,4 +1,5 @@
 import About from "./About";
+import Button from "./Button";
 import Contact from "./Contact";
 import Education from "./Education";
 import Experience from "./Experience";
@@ -10,6 +11,7 @@ import Sidebar from "./Sidebar";
 
 export{
     About,
+    Button,
     Contact,
     Education,
     Experience,

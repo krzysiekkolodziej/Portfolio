@@ -2,51 +2,50 @@ import { useState } from "react";
 
 import styles from "../style";
 import {navLinks} from "../constants"
-import {navbar_toggle, close} from "../assets"
+import {navbar_toggle, close, logo} from "../assets"
 
 const Navbar = () => {
     const [active, setActive] = useState("Home");
     const [toggle, setToggle] = useState(false);
 
     return(
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-        <h1 className={`${styles.logo} ml-3 `}>
-            Krzysztof Kolodziej
-        </h1>
+    <nav>
+        <div className="w-full flex flex-row my-5 justify-between items-center">
+            <img src={logo} alt="logo" className="w-[124px] h-[64px] m-1"/>
 
-        <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-            {navLinks.map((nav, index) => (
-                <li
-                    key={nav.id}
-                    className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 ${active === nav.title ? "text-white" : "text-dimWhite"}`} onClick={() => setActive(nav.title)} 
-                >
-                    <a href={`#${nav.id}`}> {nav.title} </a>
-                </li>
-            ))}
-        </ul>
-
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+            <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+                {navLinks.map((nav, index) => (
+                    <li
+                        key={nav.id}
+                        className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 ${active === nav.title ? "text-gradient" : "text-dimGradient"}`} onClick={() => setActive(nav.title)} 
+                    >
+                        <a href={`#${nav.id}`}> {nav.title} </a>
+                    </li>
+                ))}
+            </ul>
             <img 
                 src={toggle ? close : navbar_toggle}
                 alt="menu"
-                className="w-[28px] h-[28px] mr-10  object-contain"
+                className="w-[28px] h-[28px] mr-10 sm:hidden object-contain"
                 onClick={() => setToggle(!toggle)}
             />
-
-            <div className={`${!toggle ? "hidden" : "flex"} p-6 bg-black-gradient absolute top-16 right-0 m-4 min-w-[140px] rounded-xl sidebar`}>
-                <ul className="list-none flex justify-end items-start flex-1 flex-col">
+        </div>
+        
+        <div className="w-full sm:hidden flex flex-col items-end text-right">
+            <div className={`${!toggle ? "hidden" : "flex"} w-full flex flex-col`}>
+                <ul className="mr-10">
                     {navLinks.map((nav, index) => (
                         <li
                             key={nav.id}
-                            className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-dimWhite"} ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
+                            className={`font-poppins font-medium cursor-pointer text-[16px] mb-5 ${active === nav.title ? "text-gradient" : "text-dimGradient"} `}
                             onClick={() => setActive(nav.title)}
                         >
-                            <a href={`#${nav.id}`}>{nav.title}</a>     
+                            <a href={`#${nav.id}`}>{nav.title}</a>    
+                            <hr className={`my-5 -mr-10 ${index === navLinks.length - 1 ? "hidden" : "visible"}`} /> 
                         </li>
                     ))}
                 </ul>
-            </div>
-
+            </div>   
         </div>
     </nav>
     );

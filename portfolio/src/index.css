@@ -21,20 +21,21 @@
 }
 
 .text-gradient {
-  background: radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
-  );
+  background: linear-gradient(#ffffff, #16cfaa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
+.text-dimGradient{
+  background: linear-gradient(#767575, #16cfaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
 
 .box-shadow {
   box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
@@ -65,4 +66,12 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+
+hr{
+  height: 1px;
+  background: linear-gradient(#767575, #16cfaa);
+  border: none;
+  outline: none;
+  position: relative;
 }
