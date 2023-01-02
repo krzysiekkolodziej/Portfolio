@@ -28,7 +28,7 @@ const Experience = () => {
                 </div>
             </div>  
 
-            
+            <div className="absolute z-[0] w-[40%] h-[40%] rounded-full right-0 bottom-auto blue__gradient" />
         </section>
     );
 };

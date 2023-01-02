@@ -19,7 +19,7 @@ const Hero = () => (
             <Button text="Download my CV!"/> 
         </a>
 
-        <div className="absolute z-[0] w-[60%] h-[60%] rounded-full top-20 left-20 white__gradient" />
+        <div className="absolute z-[0] w-[50%] h-[50%] rounded-full top-auto left-0 white__gradient" />
     </section>
 );
 

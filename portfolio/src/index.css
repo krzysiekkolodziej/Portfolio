@@ -83,7 +83,7 @@ hr{
 }
 .blue__gradient {
   background: rgba(22, 207, 170, 0.6);
-  filter: blur(750px);
+  filter: blur(350px);
 }
 
 .gradient__button{

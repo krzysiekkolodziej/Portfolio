@@ -4,7 +4,9 @@ export const styles = {
     logo: "font-poppins font-bold xs:text-[30px] text-[24px] gradient",
     heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
     paragraph: "font-poppins text-dimWhite font-normal text-[18px] leading-[30.8px]",
-    icons: "font-poppins text__gradient font-normal text-[68px] leading-[20px]",
+    icons: "font-poppins text__gradient text-[68px]",
+    socialIcons: "font-poppins text-dimWhite text-[32px]",
+
 
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",
