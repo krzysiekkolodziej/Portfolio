@@ -1,11 +1,16 @@
-import styles from './style';
-import {Navbar, Hero, Experience} from './components';
+import {styles, layout} from './style';
+import {Navbar, Hero, Experience, About, Skills, Contact} from './components';
 
 const App = () => (
     <div className="bg-black w-full overflow-hidden">
         <Navbar />
         <Hero />
-        <Experience />
+        <section className={`${layout.section}`}>
+            <About />
+            <Skills />
+        </section>
+        <Experience /> 
+        <Contact />  
     </div> 
 )
 

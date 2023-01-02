@@ -17,7 +17,7 @@ const Navbar = () => {
                 {navLinks.map((nav, index) => (
                     <li
                         key={nav.id}
-                        className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 ${active === nav.title ? "text-gradient" : "text-dimGradient"}`} onClick={() => setActive(nav.title)} 
+                        className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 ${active === nav.title ? "gradient" : "dimGradient"}`} onClick={() => setActive(nav.title)} 
                     >
                         <a href={`#${nav.id}`}> {nav.title} </a>
                     </li>
@@ -37,7 +37,7 @@ const Navbar = () => {
                     {navLinks.map((nav, index) => (
                         <li
                             key={nav.id}
-                            className={`font-poppins font-medium cursor-pointer text-[16px] mb-5 ${active === nav.title ? "text-gradient" : "text-dimGradient"} `}
+                            className={`font-poppins font-medium cursor-pointer text-[16px] mb-5 ${active === nav.title ? "gradient" : "dimGradient"} `}
                             onClick={() => setActive(nav.title)}
                         >
                             <a href={`#${nav.id}`}>{nav.title}</a>    

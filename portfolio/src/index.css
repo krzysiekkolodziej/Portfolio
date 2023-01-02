@@ -20,14 +20,14 @@
   scroll-behavior: smooth;
 }
 
-.text-gradient {
+.gradient {
   background: linear-gradient(#ffffff, #16cfaa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
-.text-dimGradient{
+.dimGradient{
   background: linear-gradient(#767575, #16cfaa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -78,10 +78,14 @@ hr{
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+.text__gradient{
+  color: #16cfaa;
+}
 .blue__gradient {
   background: rgba(22, 207, 170, 0.6);
   filter: blur(750px);
 }
+
 .gradient__button{
   --angle: 0deg;
   border: 2px solid;

@@ -4,7 +4,7 @@ import {CV} from '../assets'
 
 const Hero = () => (
     <section className="md:m-40 sm:m-32 m-16">
-        <div className={`text-gradient ${styles.paragraph}`}>
+        <div className={`gradient ${styles.paragraph}`}>
             Hi, my name is
         </div>
         <div className={styles.heading2}>

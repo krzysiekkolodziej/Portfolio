@@ -5,16 +5,12 @@ export const navLinks = [
         title: "Home",
     },
     {
+        id: "about_me",
+        title: "About me",
+    },
+    {
         id: "experience",
         title: "Experience",
-    },
-    {
-        id: "education",
-        title: "Education",
-    },
-    {
-        id: "projects",
-        title: "Projects",
     },
     {
         id: "contact",
@@ -26,7 +22,7 @@ export const expLinks = [
     {
         id: "asseco",
         title: "Asseco",
-        duration: "(02/03/2020 - 11/03/2020) (interrupted because of coronavirus pandemic",
+        duration: "(02/03/2020 - 11/03/2020) (interrupted because of coronavirus pandemic)",
         content1: "Data reorganization on servers with archives",
         content2: "Preparation of a repository of tools used in the Team",
         content3: "Small modifications in portals DPS.SRW (Javascript)",
