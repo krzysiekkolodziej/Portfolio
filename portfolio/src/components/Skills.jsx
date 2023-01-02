@@ -1,31 +1,36 @@
 import styles from '../style'
 import {DiPython, DiPhp, DiCss3, DiSass, DiHtml5, DiGithubBadge, DiReact, DiJsBadge, DiBootstrap, DiMagento,} from 'react-icons/di'
 import {SiCplusplus, SiC, SiTailwindcss, SiMicrosoftsqlserver, SiMysql, SiTypescript } from 'react-icons/si'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Skills = () => (
-    <section className="md:mx-40 sm:mx-32 mx-16">
-        <div className={`${styles.heading2} my-5`}>
-            Skills:
-        </div>
-        <div className={`flex flex-wrap justify-center ${styles.icons} `}>    
-            <DiPython className="sm:mx-5 sm:mb-5 m-1" title="Python"/> 
-            <SiC className="sm:mx-5 sm:mb-5 m-1" title="C"/>
-            <SiCplusplus className="sm:mx-5 sm:mb-5 m-1" title="C++"/>
-            <DiHtml5 className="sm:mx-5 sm:mb-5 m-1" title="HTML5"/>
-            <DiCss3 className="sm:mx-5 sm:mb-5 m-1" title="CSS3"/>
-            <DiSass className="sm:mx-5 sm:mb-5 m-1" title="Sass"/>
-            <DiBootstrap className="sm:mx-5 sm:mb-5 m-1" title="Bootstrap 5"/>
-            <SiTailwindcss className="sm:mx-5 sm:mb-5 m-1" title="Tailwind CSS"/>
-            <DiJsBadge className="sm:mx-5 sm:mb-5 m-1" title="JavaScript"/>
-            <SiTypescript className="sm:mx-5 sm:mb-5 m-1" title="TypeScript"/> 
-            <DiReact className="sm:mx-5 sm:mb-5 m-1" title="React.js"/>            
-            <DiPhp className="sm:mx-5 sm:mb-5 m-1" title="PHP"/> 
-            <DiMagento className="sm:mx-5 sm:mb-5 m-1" title="Magento"/>                       
-            <DiGithubBadge className="sm:mx-5 sm:mb-5 m-1" title="Github"/>                     
-            <SiMicrosoftsqlserver className="sm:mx-5 sm:mb-5 m-1" title="Microsoft SQL Server"/>
-            <SiMysql className="sm:mx-5 sm:mb-5 m-1" title="MySQL"/>            
-        </div>
-    </section>
+    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>   
+        <section className={`${styles.marginX}`}>
+            <div className={`${styles.heading2} my-5`}>
+                Skills:
+            </div>
+            <div className={`flex flex-wrap justify-center ${styles.icons} `}>    
+                <div className="absolute z-[0] w-[40%] h-[40%] rounded-full top-auto blue__gradient" />
+
+                <DiPython className={`${styles.marginXIcons}`} title="Python"/> 
+                <SiC className={`${styles.marginXIcons}`} title="C"/>
+                <SiCplusplus className={`${styles.marginXIcons}`} title="C++"/>
+                <DiHtml5 className={`${styles.marginXIcons}`} title="HTML5"/>
+                <DiCss3 className={`${styles.marginXIcons}`} title="CSS3"/>
+                <DiSass className={`${styles.marginXIcons}`} title="Sass"/>
+                <DiBootstrap className={`${styles.marginXIcons}`} title="Bootstrap 5"/>
+                <SiTailwindcss className={`${styles.marginXIcons}`} title="Tailwind CSS"/>
+                <DiJsBadge className={`${styles.marginXIcons}`} title="JavaScript"/>
+                <SiTypescript className={`${styles.marginXIcons}`} title="TypeScript"/> 
+                <DiReact className={`${styles.marginXIcons}`} title="React.js"/>            
+                <DiPhp className={`${styles.marginXIcons}`} title="PHP"/> 
+                <DiMagento className={`${styles.marginXIcons}`} title="Magento"/>                       
+                <DiGithubBadge className={`${styles.marginXIcons}`} title="Github"/>                     
+                <SiMicrosoftsqlserver className={`${styles.marginXIcons}`} title="Microsoft SQL Server"/>
+                <SiMysql className={`${styles.marginXIcons}`} title="MySQL"/>            
+            </div>
+        </section>
+    </AnimationOnScroll>
 );
 
 export default Skills

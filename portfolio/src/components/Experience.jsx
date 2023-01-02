@@ -1,8 +1,10 @@
 import styles from '../style'
 import { expLinks } from '../constants';
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Experience = () => {
     return (
+    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>   
         <section className="flex flex-col m-20">
             <div className={`${styles.heading2} text-center`}>
                 Experience 
@@ -28,8 +30,8 @@ const Experience = () => {
                 </div>
             </div>  
 
-            <div className="absolute z-[0] w-[40%] h-[40%] rounded-full right-0 bottom-auto blue__gradient" />
         </section>
+    </AnimationOnScroll>
     );
 };
 

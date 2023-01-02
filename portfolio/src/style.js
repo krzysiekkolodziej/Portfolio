@@ -15,7 +15,8 @@ export const styles = {
     paddingY: "sm:py-16 py-6",
     padding: "sm:px-16 px-6 sm:py-12 py-4",
 
-    marginX: "sm:mx-16 mx-6",
+    marginX: "md:mx-30 sm:mx-24 mx-16",
+    marginXIcons: "sm:mx-5 sm:mb-5 mx-1 mb-1",
     marginY: "sm:my-16 my-6",
 }
 

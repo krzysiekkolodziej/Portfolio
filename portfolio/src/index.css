@@ -16,8 +16,8 @@
   );
 }
 
-* {
-  scroll-behavior: smooth;
+*{
+  scroll-behavior: smooth !important;
 }
 
 .gradient {
@@ -113,3 +113,16 @@ hr{
   initial-value: 0deg;
   inherits: false;
 }
+/* @keyframes slideOnLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero, .about{
+  animation: 0.7s ease-in-out 0s 1 slideOnLoad;
+} */
