@@ -11,13 +11,15 @@ const Hero = () => (
             Krzysztof Kolodziej. <br/>
             <span className="text-dimWhite">I'm software engineer</span>
         </div>
-        <div className={`${styles.paragraph} max-w-[60%]`}>
+        <div className={`${styles.paragraph} md:max-w-[60%]`}>
             A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product
         </div>
         
         <a href={CV} title="CV" target="_blank">
             <Button text="Download my CV!"/> 
         </a>
+
+        <div className="absolute z-[0] w-[60%] h-[60%] rounded-full top-20 left-20 white__gradient" />
     </section>
 );
 
