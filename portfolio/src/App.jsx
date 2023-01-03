@@ -1,4 +1,4 @@
-import {styles, layout} from './style';
+import {layout} from './style';
 import {Navbar, Hero, Experience, About, Skills, Contact, Footer, Sidebar} from './components';
 
 const App = () => (
@@ -6,9 +6,14 @@ const App = () => (
         <Sidebar />
         <Navbar />
         <Hero/>
-        <div id="about_me" className={`${layout.section}`}>
-            <About />
-            <Skills />
+        <div className={`${layout.section}`}>
+            <div id="about_me">
+                <About />
+            </div>
+            <div id="skills">
+                <Skills />
+            </div>
+             
         </div>
         <div id="experience">
             <Experience/> 

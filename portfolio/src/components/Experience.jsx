@@ -4,8 +4,8 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Experience = () => {
     return (
-    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>   
-        <section className="overflow-hidden z-[1] flex flex-col sm:m-20 m-2 sm:text-justify text-start">
+    <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>   
+        <section className="overflow-hidden z-[1] flex flex-col sm:m-20 m-2 mt-20 sm:text-justify text-start">
             <div className={`${styles.heading2} text-center`}>
                 Experience 
             </div>

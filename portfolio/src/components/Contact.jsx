@@ -37,8 +37,8 @@ const Contact = () => {
     };
 
     return (
-        <section className="overflow-hidden z-[1] flex flex-col justify-center text-center md:mx-96 sm:mx-32 mx-16">
-            <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>   
+        <section className="overflow-hidden z-[1] mt-20 flex flex-col justify-center text-center md:mx-96 sm:mx-32 mx-16">
+            <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>   
                 <div className={`${styles.heading2} my-5`}>
                     Contact
                 </div>

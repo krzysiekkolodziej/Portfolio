@@ -4,9 +4,9 @@ import {SiCplusplus, SiC, SiTailwindcss, SiMicrosoftsqlserver, SiMysql, SiTypesc
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Skills = () => (
-    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>   
-        <section className={`overflow-hidden ${styles.marginX}`}>
-            <div className={`${styles.heading2} my-5`}>
+    <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce>   
+        <section className={`overflow-hidden md:mt-0 mt-20 ${styles.marginX}`}>
+            <div className={`${styles.heading2} text-center  my-5`}>
                 Skills:
             </div>
             <div className={`flex flex-wrap justify-center ${styles.icons} `}>    

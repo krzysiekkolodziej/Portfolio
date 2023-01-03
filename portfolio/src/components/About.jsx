@@ -2,8 +2,8 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 import styles from '../style'
 
 const About = () => (   
-    <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>   
-        <section className={`z-[1] about overflow-hidden ${styles.marginX}`}>
+    <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce animatePreScroll={false} >   
+        <section className={`z-[1] overflow-hidden ${styles.marginX} `}>
 
             <div className={`${styles.heading2} my-5`}>
                 Get to know me!

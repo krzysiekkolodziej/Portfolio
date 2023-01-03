@@ -4,10 +4,10 @@ import {CV} from '../assets'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const Hero = () => (
-    <section className="overflow-hidden z-[1] md:m-40 sm:m-32 m-16">
+    <section className="overflow-hidden z-[1] md:m-40 sm:m-32 m-16 mb-20">
         <div className="absolute z-[0] w-[50%] h-[50%] rounded-full bottom-auto white__gradient" />
 
-        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce animatePreScroll={false} >  
+        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce animatePreScroll={false} >  
             <div className={`gradient ${styles.paragraph}`}>
                 Hi, my name is
             </div>
