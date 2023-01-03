@@ -3,7 +3,7 @@ import styles from '../style'
 
 const About = () => (   
     <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>   
-        <section className={`about ${styles.marginX}`}>
+        <section className={`z-[1] about overflow-hidden ${styles.marginX}`}>
 
             <div className={`${styles.heading2} my-5`}>
                 Get to know me!

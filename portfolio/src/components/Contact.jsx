@@ -37,7 +37,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="flex flex-col justify-center text-center md:mx-96 sm:mx-32 mx-16">
+        <section className="overflow-hidden z-[1] flex flex-col justify-center text-center md:mx-96 sm:mx-32 mx-16">
             <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>   
                 <div className={`${styles.heading2} my-5`}>
                     Contact
@@ -62,7 +62,7 @@ const Contact = () => {
                     <textarea minLength="20" rows="10" id="message" name="message" value={toSend.message} onChange={handleChange} placeholder="Enter your message" title="This input is required!" className="form-textarea bg-black-gradient gradient__button text-dimWhite border border-dimWhite block w-full p-2.5 focus:ring-0 " required></textarea>
 
                     <div className="flex flex-row justify-end w-full">
-                        <button type="submit" className="justify-end gradient__button p-6 mt-5 font-poppins font-semibold text-[18px] gradient min-w-[25%]">
+                        <button type="submit" className="justify-end gradient__button p-6 mt-5 font-poppins font-semibold text-[18px] gradient sm:min-w-[25%] min-w-[100%]">
                             Submit
                         </button>
                     </div>

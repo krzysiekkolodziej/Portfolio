@@ -9,9 +9,11 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
     return(
-    <nav>
+    <nav className="sticky top-0 overflow-hidden z-[1]">
         <div className="w-full flex flex-row my-5 justify-between items-center">
-            <img src={logo} alt="logo" className="w-[124px] h-[64px] m-1"/>
+            <a href="#home">
+                <img src={logo} alt="logo" className="w-[124px] h-[64px] m-1"/>
+            </a>
 
             <ul className="list-none sm:flex hidden justify-end items-center flex-1">
                 {navLinks.map((nav, index) => (
@@ -31,8 +33,8 @@ const Navbar = () => {
             />
         </div>
         
-        <div className="w-full sm:hidden flex flex-col items-end text-right">
-            <div className={`${!toggle ? "hidden" : "flex"} w-full flex flex-col`}>
+        <div className="w-full sm:hidden flex flex-col items-end text-right dropDownNav">
+            <div className={`${!toggle ? "hidden" : "flex"} ${!toggle ? "" : "dropDownNav"} w-full flex-col`}>
                 <ul className="mr-10">
                     {navLinks.map((nav, index) => (
                         <li

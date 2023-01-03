@@ -1,11 +1,11 @@
 import styles from '../style'
-import {DiPython, DiPhp, DiCss3, DiSass, DiHtml5, DiGithubBadge, DiReact, DiJsBadge, DiBootstrap, DiMagento,} from 'react-icons/di'
+import {DiPython, DiPhp, DiCss3, DiSass, DiHtml5, DiGithubBadge, DiReact, DiJsBadge, DiBootstrap,} from 'react-icons/di'
 import {SiCplusplus, SiC, SiTailwindcss, SiMicrosoftsqlserver, SiMysql, SiTypescript } from 'react-icons/si'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Skills = () => (
     <AnimationOnScroll animateIn="animate__fadeIn" animateOnce>   
-        <section className={`${styles.marginX}`}>
+        <section className={`overflow-hidden ${styles.marginX}`}>
             <div className={`${styles.heading2} my-5`}>
                 Skills:
             </div>
@@ -24,7 +24,6 @@ const Skills = () => (
                 <SiTypescript className={`${styles.marginXIcons}`} title="TypeScript"/> 
                 <DiReact className={`${styles.marginXIcons}`} title="React.js"/>            
                 <DiPhp className={`${styles.marginXIcons}`} title="PHP"/> 
-                <DiMagento className={`${styles.marginXIcons}`} title="Magento"/>                       
                 <DiGithubBadge className={`${styles.marginXIcons}`} title="Github"/>                     
                 <SiMicrosoftsqlserver className={`${styles.marginXIcons}`} title="Microsoft SQL Server"/>
                 <SiMysql className={`${styles.marginXIcons}`} title="MySQL"/>            

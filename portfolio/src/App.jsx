@@ -1,8 +1,9 @@
 import {styles, layout} from './style';
-import {Navbar, Hero, Experience, About, Skills, Contact, Footer} from './components';
+import {Navbar, Hero, Experience, About, Skills, Contact, Footer, Sidebar} from './components';
 
 const App = () => (
-    <div id="home" className="bg-black w-full overflow-hidden">
+    <div id="home" className="bg-black w-full sm:overflow-visible overflow-hidden">
+        <Sidebar />
         <Navbar />
         <Hero/>
         <div id="about_me" className={`${layout.section}`}>

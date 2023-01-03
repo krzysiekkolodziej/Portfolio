@@ -18,6 +18,7 @@
 
 *{
   scroll-behavior: smooth !important;
+  box-sizing: border-box;
 }
 
 .gradient {
@@ -39,11 +40,26 @@
   box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
-.sidebar {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.dropDownNav{
+  animation: 0.5s ease-in-out 0s 1 slideOnLoad;
 }
 
+@keyframes slideOnLoad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideOnLoad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(100px);
@@ -98,7 +114,6 @@ hr{
   border: 2px solid;
   border-top: 0px;
   border-bottom: 0px;
-  border-right: 0px;
   border-image-slice: 1;
   border-image-source: linear-gradient(var(--angle), #767575, #16cfaa);
   animation: 5s rotate linear infinite;
@@ -113,16 +128,7 @@ hr{
   initial-value: 0deg;
   inherits: false;
 }
-/* @keyframes slideOnLoad {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.hero, .about{
+
+/* .hero, .about{
   animation: 0.7s ease-in-out 0s 1 slideOnLoad;
 } */
