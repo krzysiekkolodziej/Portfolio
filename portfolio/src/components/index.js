@@ -8,14 +8,14 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Skills from "./Skills";
 
-export{
-    About,
-    Button,
-    Contact,
-    Experience,
-    Footer,
-    Hero,
-    Navbar,
-    Sidebar,
-    Skills,
+export {
+  About,
+  Button,
+  Contact,
+  Experience,
+  Footer,
+  Hero,
+  Navbar,
+  Sidebar,
+  Skills,
 };
