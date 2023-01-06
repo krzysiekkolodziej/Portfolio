@@ -18,7 +18,11 @@ const App = () => (
   >
     <Sidebar />
     <Navbar />
-    <Hero />
+    <div>
+      <div className="absolute z-[0] w-[60%] h-[60%] rounded-full sm:right-0 right-auto top-auto blue__gradient" />
+      <Hero />
+    </div>
+
     <div className={`${layout.section}`}>
       <div id="about_me">
         <About />

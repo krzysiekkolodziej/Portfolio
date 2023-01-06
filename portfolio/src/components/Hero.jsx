@@ -5,9 +5,7 @@ import { CV } from "../assets";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Hero = () => (
-  <section className="overflow-hidden z-[1] md:m-40 sm:m-32 m-16 mb-20">
-    <div className="absolute z-[0] w-[60%] h-[60%] rounded-full right-0 top-auto blue__gradient" />
-
+  <section className="overflow-hidden z-[1] md:m-40 sm:m-32 my-20 mx-8">
     <AnimationOnScroll
       animateIn="animate__fadeInUp"
       animateOnce
@@ -18,7 +16,7 @@ const Hero = () => (
         Krzysztof Kolodziej. <br />
         <span className="text-dimWhite">I am software engineer</span>
       </div>
-      <div className={`${styles.paragraph} md:max-w-[60%]`}>
+      <div className={`${styles.paragraph} my-2 md:max-w-[60%]`}>
         A Frontend focused Web Developer building the Frontend of Websites and
         Web Applications that leads to the success of the overall product
       </div>
