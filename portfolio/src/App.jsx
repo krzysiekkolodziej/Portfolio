@@ -19,7 +19,7 @@ const App = () => (
     <Sidebar />
     <Navbar />
     <div>
-      <div className="absolute z-[0] w-[60%] h-[60%] rounded-full sm:right-0 right-auto top-auto blue__gradient" />
+      <div className="absolute z-[0] w-[55%] h-[55%] rounded-full sm:right-0 right-auto top-auto blue__gradient" />
       <Hero />
     </div>
 

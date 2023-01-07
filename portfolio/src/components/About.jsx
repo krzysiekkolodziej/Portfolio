@@ -11,17 +11,14 @@ const About = () => (
     <section className={`z-[1] overflow-hidden ${styles.marginX} `}>
       <div className={`${styles.heading2} my-5`}>Get to know me!</div>
       <div className={`${styles.paragraph}`}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu
-        placerat tellus, a faucibus nisi. Aenean tristique, mauris sit amet
-        finibus vestibulum, dolor arcu ullamcorper magna, rutrum placerat diam
-        nisl at lectus. <br /> Duis id diam eu neque condimentum sagittis. Etiam
-        vestibulum vel felis a facilisis. Aliquam in orci vitae est sollicitudin
-        tincidunt vel vitae augue. Vestibulum mollis pulvinar tellus, ut
-        accumsan felis sagittis eget.
-        <br /> Donec varius aliquet arcu at egestas. Vivamus sit amet ex
-        iaculis, tincidunt tortor quis, tempus ligula. Cras congue lobortis
-        neque a commodo. Donec sollicitudin molestie orci, sit amet facilisis
-        tortor gravida non. In consectetur commodo massa id mattis.
+        I am a second-year computer science student, fascinated in creating
+        websites and web applications. I am open to many technologies and new
+        challenges, and I would like to gain my first commercial experience as a
+        programmer. My other hobby is bodybuilding, I always give my best in
+        everything i do <br /> <br />
+        If you want to contact me, please write e-mail to me, I will reply as
+        soon as possible. I am looking for an internship from July to September
+        2023, or a part-time job that I could start right now
       </div>
     </section>
   </AnimationOnScroll>

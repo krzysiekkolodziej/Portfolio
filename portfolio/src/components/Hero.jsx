@@ -17,7 +17,7 @@ const Hero = () => (
         <span className="text-dimWhite">I am software engineer</span>
       </div>
       <div className={`${styles.paragraph} my-2 md:max-w-[60%]`}>
-        A Frontend focused Web Developer building the Frontend of Websites and
+        A Frontend focused Web Developer building Websites and
         Web Applications that leads to the success of the overall product
       </div>
 
