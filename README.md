@@ -1,4 +1,4 @@
-#Portfolio
+# Portfolio
 https://kkolodziej.netlify.app/
 
 Tech: JavaScript, React, HTML, CSS, TailwindCSS, Vite.
